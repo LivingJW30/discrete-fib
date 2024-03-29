@@ -2,10 +2,12 @@
  * It will print out all the numbers of the sequence and also find if they are divisible
  * by 5, 7, or 11. From this we can see a pattern and generate a concrete formula to
  * determine what fibonacci numbers are divisible by 5, 7, or 11 no matter how large the 
- * numbers get. Mathematical induction can be used to prove our statement and formula as well.
+ * numbers get. Mathematical induction can be used to prove our statement and formulas as well.
  */
 
 /*
+ * Equations to determine divisibilty of Fibonacci Numbers:
+ * 
  * Fib Divisibilty by 5 eq: Every (5*i) [where i >= 1] Fibonacci number is divisible by 5 
  * Fib Divisibilty by 7 eq: Every (7*i)+i [where i >= 1] Fibonacci number is divisible by 7
  * Fib Divisibilty by 11 eq: Every (11*i)-i [where i >= 1] FIbonacci number is divisible by 11
