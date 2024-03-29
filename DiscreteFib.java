@@ -1,13 +1,21 @@
+/*This program is designed to list the fibonacci sequence up to the 40th term.
+ * It will print out all the numbers of the sequence and also find if they are divisible
+ * by 5, 7, or 11. From this we can see a pattern and generate a concrete formula to
+ * determine what fibonacci numbers are divisible by 5, 7, or 11 no matter how large the 
+ * numbers get. Mathematical induction can be used to prove our statement and formula as well.
+ */
+
 public class DiscreteFib{
     public static void main(String[] args){
 
         int n = 40;
+        int cur_num;
 
         //for loop to print the return of our fibonacci function
         for (int i=0;i<n;i++){
-            System.out.println(fib(i));
-
-            //do some code here to determine divisibility pattern
+            cur_num = fib(i);
+            System.out.print("Fib num(" + i + ") = " + cur_num);
+            div(cur_num);
         }
     }
 
@@ -18,5 +26,22 @@ public class DiscreteFib{
         }
 
         return fib(n-1)+fib(n-2);
+    }
+
+    //function to determine if a fib num is divisible by 5,7, or 11
+    public static void div(int num){
+        if (num%5 == 0){
+            System.out.print(" div 5 = " + (num/5));
+        }
+
+        if (num%7 == 0){
+            System.out.print(" div 7 = " + (num/7));
+        }
+
+        if (num%11 == 0){
+            System.out.print(" div 11 = " + (num/11));
+        }
+
+        System.out.println("");
     }
 }
