@@ -5,6 +5,12 @@
  * numbers get. Mathematical induction can be used to prove our statement and formula as well.
  */
 
+/*
+ * Fib Divisibilty by 5 eq: Every (5*i) [where i >= 1] Fibonacci number is divisible by 5 
+ * Fib Divisibilty by 7 eq: Every (7*i)+i [where i >= 1] Fibonacci number is divisible by 7
+ * Fib Divisibilty by 11 eq: Every (11*i)-i [where i >= 1] FIbonacci number is divisible by 11
+ */
+
 public class DiscreteFib{
     public static void main(String[] args){
 
@@ -14,7 +20,7 @@ public class DiscreteFib{
         //for loop to print the return of our fibonacci function
         for (int i=0;i<n;i++){
             cur_num = fib(i);
-            System.out.print("Fib num(" + i + ") = " + cur_num);
+            System.out.print("Fib num(" + (i+1) + ") = " + cur_num);
             div(cur_num);
         }
     }
