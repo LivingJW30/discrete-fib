@@ -9,8 +9,8 @@
  * Equations to determine divisibilty of Fibonacci Numbers:
  * 
  * Fib Divisibilty by 5 eq: Every (5*i) [where i >= 1] Fibonacci number is divisible by 5 
- * Fib Divisibilty by 7 eq: Every (7*i)+i [where i >= 1] Fibonacci number is divisible by 7
- * Fib Divisibilty by 11 eq: Every (11*i)-i [where i >= 1] FIbonacci number is divisible by 11
+ * Fib Divisibilty by 7 eq: Every (8*i) [where i >= 1] Fibonacci number is divisible by 7
+ * Fib Divisibilty by 11 eq: Every (10*i) [where i >= 1] FIbonacci number is divisible by 11
  */
 
 public class DiscreteFib{
@@ -48,6 +48,9 @@ public class DiscreteFib{
 
         if (num%11 == 0){
             System.out.print(" div 11 = " + (num/11));
+        }
+        if ((num%5 != 0) && (num%7 != 0) && (num%11 != 0)){
+            System.out.print(" div 5 = " + (num/5)+" R "+(num%5) +" div 7 = " + (num/7)+" R "+(num%7) + " div 11 = " + (num/11)+" R "+(num%11));
         }
 
         System.out.println("");
